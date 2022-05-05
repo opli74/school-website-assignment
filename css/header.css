@@ -43,13 +43,12 @@
     --nav-text: rgb(255, 255, 255);
     --nav-shadow: rgba(0,0,0,0);
     background-color: var(--nav-background);
-    text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0px 3px 20px var(--nav-shadow), 0px 2px var(--nav-accent);
     height: 85px;
-    transition: all .6s ease;
+    /* transition: all .6s ease; */
     z-index: 99999;
 }
 
