@@ -215,13 +215,13 @@
         function myFunction(smaller) {
         if (smaller.matches) { 
             constrain = 65;
-            calcYmultiplier = -10;
-            calcXmultiplier = 1;
+            calcYmultiplier = -2;
+            calcXmultiplier = 1.5;
 
         } else {
             constrain = 130;
-            calcYmultiplier = -1.5;
-            calcXmultiplier = 1.5;
+            calcYmultiplier = -1.65;
+            calcXmultiplier = 1.65;
         }
         }
 
@@ -241,17 +241,17 @@
             const box = el.getBoundingClientRect();
             const calcX = -(y - box.y - (box.height / 2)) / constrain;
             const calcY = (x - box.x - (box.width / 2)) / constrain;
-            if (calcX < -6) {
-                calcX = -6
+            if (calcX < -10) {
+                calcX = -10
 
-            } else if (calcX > 6) {
-                calcX = 6
+            } else if (calcX > 10) {
+                calcX = 10
 
             }else if (calcY < -12) {
                 calcY = -12
                 
-            }else if (calcY > 7) {
-                calcY = 7
+            }else if (calcY > 12) {
+                calcY = 12
             }
             root.style.setProperty('--shadx', calcY * calcYmultiplier +"px");
             root.style.setProperty('--shady', calcX * calcXmultiplier +"px");
