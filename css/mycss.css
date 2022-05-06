@@ -138,7 +138,7 @@ h6 {
 
 span {
     display: inline-block;
-    transition: color .25s ease;
+    transition: color .35s ease;
 }
 
 span:hover {
@@ -147,7 +147,7 @@ span:hover {
 }
 
 span.animation{
-    animation: squish .7s ease;
+    animation: squish 1s ease;
     color: var(--accent-2);
 }
 
