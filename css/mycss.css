@@ -147,7 +147,7 @@ span:hover {
 }
 
 span.animation{
-    animation: squish 1s ease;
+    animation: squish .7s ease;
     color: var(--accent-2);
 }
 
